@@ -3,8 +3,8 @@ body, html {
 }
 
 .title-text {
-  padding-left: 17%;
   color: #92d1d1;
+  text-align: center;
 }
 
 .bio {
@@ -34,6 +34,7 @@ hr {
   width: 50%;
   padding-top: 3%;
   color: #4b4f5d;
+  text-align: justify;
 }
 
 .photo {
@@ -55,4 +56,24 @@ hr {
 
 a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  .bio {
+    display: table;
+  }
+  .photo-content {
+    width: 100%;
+  }
+  .photo {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+  }
 }
