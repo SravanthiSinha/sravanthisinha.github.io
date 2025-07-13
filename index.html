@@ -1,36 +1,672 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Sravanthi Sinha</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
-  <link rel="shortcut icon" type="image/png" href="images/me.png" />
+  <meta name="description"
+    content="Sravanthi Sinha - Software Engineer specializing in AI applications, research, and complex problem solving">
+  <title>Sravanthi Sinha</title>
+
+  <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/theme.css">
+
 </head>
 
-<body>
-  <div class="main">
-    <div class="title-text">
-      <h1>SRAVANTHI SINHA</h1>
-    </div>
-    <hr>
-    <div class="bio">
-      <div class="photo-content">
-        <img src="images/me.png" class="photo" />
-      </div>
-      <div class="content">
-        <p> <b>Sravanthi Sinha is a Full Stack Software Engineer. She is excited about the future of AI research. </b></p>
-        <p>Sinha was one of the data scientists who worked on a project for the <span class="highlight">NASA Frontier Development Lab </span>program which was hosted at <span class="highlight">SETI Institute</span>. She is one of the 32 students selected
-          from all around the world to be part of the first class Holberton School. </p>
-        <p>She was also a Student Intern at <span class="highlight">National Resource for Network Biology</span> (NRNB) in 2012 and is a member of NRNB Academy Alumni. Sravanthi successfully completed <span class="highlight">Google Summer Of Code</span>          (GSOC) 2013, GSOC 2014 and GSOC 2016 first as a student and then as a mentor. Published WikiPathways: capturing the full diversity of pathway knowledge (2015) in Oxford Journals. </p>
-        <p>Sravanthi earned a Bachelor’s degree in Electronics & Communication Engineering from Keshav Memorial Institute of Technology in Hyderabad, India.</p>
-        <div class="gap"></div>
-        <p>Follow her on Twitter <a href="https://twitter.com/SravanthiSinha">@SravanthiSinha </a></p>
-        </p>
+<body class="relative">
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="stars-container" aria-hidden="true"></div>
+
+  <!-- Space Elevator Cable -->
+  <div class="elevator-cable" aria-hidden="true"></div>
+
+  <!-- Space Elevator Car -->
+  <div class="scroll-rocket" id="scroll-rocket" aria-hidden="true" role="img"
+    aria-label="Space elevator progress indicator">
+    <div class="rocket-body">
+      <div class="rocket-ship">
+        <!-- Main Elevator Car -->
+        <div class="elevator-car">
+          <!-- Windows -->
+          <div class="elevator-window-top"></div>
+          <div class="elevator-window-bottom"></div>
+
+          <!-- Power Core -->
+          <div class="elevator-power-core"></div>
+
+          <!-- Side Panels -->
+          <div class="elevator-panel-left"></div>
+          <div class="elevator-panel-right"></div>
+
+          <!-- Cable Connectors -->
+          <div class="elevator-connector-top"></div>
+          <div class="elevator-connector-bottom"></div>
+
+          <!-- Status Lights -->
+          <div class="elevator-status-light"></div>
+          <div class="elevator-status-light"></div>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- Mobile Menu Toggle -->
+  <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-nav-menu" id="mobile-nav-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-nav-item active" data-section="about">ABOUT</a>
+    <a href="#research" class="mobile-nav-item" data-section="research">RESEARCH</a>
+    <a href="#projects" class="mobile-nav-item" data-section="projects">PROJECTS</a>
+    <a href="#contact" class="mobile-nav-item" data-section="contact">CONTACT</a>
+  </nav>
+
+  <!-- Desktop Navigation Menu -->
+  <nav class="fixed top-8 left-8 right-8 z-20" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#about" class="nav-item active" data-section="about" role="button" tabindex="0">
+        ABOUT
+      </a>
+      <a href="#research" class="nav-item" data-section="research" role="button" tabindex="0">
+        RESEARCH
+      </a>
+      <a href="#projects" class="nav-item" data-section="projects" role="button" tabindex="0">
+        PROJECTS
+      </a>
+      <a href="#contact" class="nav-item" data-section="contact" role="button" tabindex="0">
+        CONTACT
+      </a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="content-section hero-section" role="banner">
+      <div class="hero-intro">Hi, my name is</div>
+      <h1 class="hero-name">Sravanthi Sinha.</h1>
+      <h2 class="hero-title">I love solving complex problems with code.</h2>
+      <p class="hero-description">
+        I'm a software engineer who enjoys working at the intersection of research and real-world applications. From
+        research to AI-powered applications, I'm passionate about solving complex problems
+        with elegant code.
+      </p>
+      <a href="#about" class="hero-cta" role="button">LEARN MORE</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+      <h2 class="section-title">
+        <span class="section-number" aria-label="Section 1">01.</span>
+        About Me
+      </h2>
+
+      <div class="content-text">
+        Hello! My name is <span class="highlight-text">Sravanthi</span>, and I'm passionate about using technology to
+        solve meaningful problems. My journey in software engineering began during my undergraduate studies in
+        Electronics
+        & Communication Engineering, but it really took off when I joined <span class="highlight-text">Google Summer of
+          Code</span>, working on bioinformatics tools that are still used by researchers today.
+      </div>
+
+      <div class="content-text">
+        I particularly enjoy working on projects that bridge different domains. I've been fortunate to work across
+        diverse
+        areas — from collaborating with NASA scientists on meteorite detection research, to building <span
+          class="highlight-text">geospatial platforms</span> for Norwegian genealogical research, and developing <span
+          class="highlight-text">mental health platforms</span> serving BIPOC communities. I was also selected as one of
+        <span class="highlight-text">32 students worldwide</span> for Holberton School's inaugural class.
+      </div>
+
+      <div class="content-text">
+        What I find most rewarding is when research can be translated into real-world applications. Whether it's
+        architecting complex data visualization tools or building AI-powered applications, I'm passionate about solving
+        challenging problems with elegant code.
+      </div>
+
+      <!-- Elite Credentials -->
+      <div class="credential-grid">
+        <article class="credential-card">
+          <h3 class="credential-title">NASA Frontier Development Lab</h3>
+          <p class="credential-description">
+            Had the opportunity to participate in NASA's applied research accelerator, working on autonomous systems for
+            meteorite detection using deep learning and computer vision.
+          </p>
+        </article>
+
+        <article class="credential-card">
+          <h3 class="credential-title">Speaking & Mentoring</h3>
+          <p class="credential-description">
+            Had the privilege to speak at Bay Area ACT-W 2017 and Deep Learning Summit Asia 2016, and mentor students
+            through Google Summer of Code program.
+          </p>
+        </article>
+
+        <article class="credential-card">
+          <h3 class="credential-title">Open Source Contributions</h3>
+          <p class="credential-description">
+            Contributed to WikiPathways and other bioinformatics tools used by researchers globally for pathway
+            visualization and analysis.
+          </p>
+        </article>
+
+        <article class="credential-card">
+          <h3 class="credential-title">Research Publications</h3>
+          <p class="credential-description">
+            Co-authored several publications in meteorite recovery, machine learning, and biological pathway knowledge
+            systems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="content-section">
+      <h2 class="section-title">
+        <span class="section-number" aria-label="Section 2">02.</span>
+        Research & Innovation
+      </h2>
+
+      <article class="project-card">
+        <h3 class="project-title">Autonomous Meteorite Detection</h3>
+        <p class="project-subtitle">NASA/SETI Institute • Frontier Development Lab</p>
+        <p class="project-description">
+          Had the opportunity to work on machine learning approaches for autonomous meteorite detection in desert
+          environments. Developed ensemble models combining traditional computer vision techniques with deep learning to
+          help drones identify meteorites more effectively. Our team published findings in Meteorites and Planetary
+          Society and presented at the 48th Lunar and Planetary Science Conference.
+        </p>
+        <div class="tech-list" role="list" aria-label="Technologies used">
+          <span class="tech-item" role="listitem">Deep Learning</span>
+          <span class="tech-item" role="listitem">Computer Vision</span>
+          <span class="tech-item" role="listitem">PyTorch</span>
+          <span class="tech-item" role="listitem">SIFT Features</span>
+          <span class="tech-item" role="listitem">Model Ensembling</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">WikiPathways: Biological Knowledge Systems</h3>
+        <p class="project-subtitle">Oxford Journals Publication • Open Source</p>
+        <p class="project-description">
+          Contributed to research on capturing the full diversity of pathway knowledge, helping to improve how
+          researchers
+          access and visualize biological data. Worked on developing plugins and tools that have been adopted by the
+          bioinformatics community, which has been incredibly rewarding to see in use by researchers worldwide.
+        </p>
+        <div class="tech-list" role="list" aria-label="Technologies used">
+          <span class="tech-item" role="listitem">Bioinformatics</span>
+          <span class="tech-item" role="listitem">Java</span>
+          <span class="tech-item" role="listitem">OSGi Framework</span>
+          <span class="tech-item" role="listitem">XML/SOAP</span>
+          <span class="tech-item" role="listitem">Data Visualization</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">AI-Powered Applications</h3>
+        <p class="project-subtitle">Current Research • Exploring New Applications</p>
+        <p class="project-description">
+          Currently exploring how AI can enhance user experiences. I'm particularly interested in building applications
+          that leverage large language models to solve real-world problems. My focus is on practical LLM
+          integration—taking cutting-edge AI capabilities and making them accessible through well-designed applications
+          that serve specific user needs.
+        </p>
+        <div class="tech-list" role="list" aria-label="Technologies used">
+          <span class="tech-item" role="listitem">OpenAI GPT</span>
+          <span class="tech-item" role="listitem">RAG Systems</span>
+          <span class="tech-item" role="listitem">Vector Databases</span>
+          <span class="tech-item" role="listitem">LangChain</span>
+          <span class="tech-item" role="listitem">Prompt Engineering</span>
+          <span class="tech-item" role="listitem">Machine Learning</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+      <h2 class="section-title">
+        <span class="section-number" aria-label="Section 3">03.</span>
+        Some Projects I've Worked On
+      </h2>
+
+      <article class="project-card">
+        <h3 class="project-title">Norwegian Heritage Preservation Platform</h3>
+        <p class="project-subtitle">Norwegian American Genealogical Center • Funded Research • <a
+            href="https://norwayparishes.com/" target="_blank" rel="noopener noreferrer" style="color: #64FFDA;"
+            aria-label="Visit Norwegian Heritage Platform">norwayparishes.com</a></p>
+        <p class="project-description">
+          Architected a sophisticated geospatial platform that brings centuries of Norwegian genealogical history to
+          life through interactive maps. Built advanced filtering systems for jurisdictional hierarchies and implemented
+          custom geocoding for historical properties, enabling researchers to trace family lineages with unprecedented
+          precision. The platform is currently live and being used by genealogical researchers worldwide.
+        </p>
+        <div class="tech-list" role="list" aria-label="Technologies used">
+          <span class="tech-item" role="listitem">React</span>
+          <span class="tech-item" role="listitem">ArcGIS JavaScript API</span>
+          <span class="tech-item" role="listitem">TypeScript</span>
+          <span class="tech-item" role="listitem">Geospatial Analysis</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">Mind Matters Center</h3>
+        <p class="project-subtitle">Mental Health Platform • <a href="https://mindmatterscenter.com/" target="_blank"
+            rel="noopener noreferrer" style="color: #64FFDA;"
+            aria-label="Visit Mind Matters Center">mindmatterscenter.com</a></p>
+        <p class="project-description">
+          Architected a comprehensive mental health platform specializing in culturally-responsive therapy services for
+          Asian-American and BIPOC communities. Built on WordPress foundation with custom React components integration,
+          implementing responsive, component-based architecture optimized for performance across all devices. Engineered
+          seamless WordPress-React hybrid architecture to deliver enhanced interactivity while maintaining content
+          management flexibility and optimal load times.
+        </p>
+        <div class="tech-list" role="list" aria-label="Technologies used">
+          <span class="tech-item" role="listitem">WordPress</span>
+          <span class="tech-item" role="listitem">React Plugins</span>
+          <span class="tech-item" role="listitem">React</span>
+          <span class="tech-item" role="listitem">Vite</span>
+          <span class="tech-item" role="listitem">TailwindCSS</span>
+          <span class="tech-item" role="listitem">Accessibility</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">Quizler: AI-Powered Assessment Platform</h3>
+        <p class="project-subtitle">Full-Stack AI Application</p>
+        <p class="project-description">
+          Engineered an intelligent quiz generation system that transforms any document into comprehensive assessments
+          using advanced AI. Features sophisticated document parsing, context-aware question generation, and
+          containerized deployment architecture for enterprise scalability.
+        </p>
+        <div class="tech-list" role="list" aria-label="Technologies used">
+          <span class="tech-item" role="listitem">React</span>
+          <span class="tech-item" role="listitem">TypeScript</span>
+          <span class="tech-item" role="listitem">Flask</span>
+          <span class="tech-item" role="listitem">OpenAI API</span>
+          <span class="tech-item" role="listitem">Docker</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">Enterprise Data Analytics Engine</h3>
+        <p class="project-subtitle">Advanced Filtering & Query Systems</p>
+        <p class="project-description">
+          Developed sophisticated data processing systems including text-to-SQL expression parsers and customizable
+          filtering modules for enterprise analytics platforms. Built robust query engines using cutting-edge
+          technologies for high-performance data manipulation and visualization.
+        </p>
+        <div class="tech-list" role="list" aria-label="Technologies used">
+          <span class="tech-item" role="listitem">TypeScript</span>
+          <span class="tech-item" role="listitem">Angular</span>
+          <span class="tech-item" role="listitem">DuckDB</span>
+          <span class="tech-item" role="listitem">ANTLR</span>
+          <span class="tech-item" role="listitem">SQL</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">PathVisio WikiPathways Client</h3>
+        <p class="project-subtitle">Open Source Bioinformatics • Google Summer of Code</p>
+        <p class="project-description">
+          Developed a revolutionary plugin that connects PathVisio to WikiPathways databases, enabling researchers
+          worldwide to search and browse biological pathways seamlessly. This tool became a standard in the
+          bioinformatics community, used by thousands of researchers for pathway visualization and analysis.
+        </p>
+        <div class="tech-list" role="list" aria-label="Technologies used">
+          <span class="tech-item" role="listitem">Java</span>
+          <span class="tech-item" role="listitem">OSGi Framework</span>
+          <span class="tech-item" role="listitem">SOAP/XML</span>
+          <span class="tech-item" role="listitem">Bioinformatics</span>
+          <span class="tech-item" role="listitem">Open Source</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+      <h2 class="section-title">
+        <span class="section-number" aria-label="Section 4">04.</span>
+        Get In Touch
+      </h2>
+
+      <div class="contact-info">
+        <p class="contact-description">
+          I'm always interested in discussing new projects and opportunities. Whether you're working on research that
+          could benefit from technical implementation, need help with AI applications, or just want to chat about
+          technology—I'd love to hear from you.
+        </p>
+
+        <p class="contact-description">
+          <span style="color: #64FFDA; font-weight: 700;">Let's build something meaningful together.</span>
+        </p>
+
+        <a href="mailto:sinha.sravanthi@gmail.com" class="contact-button" aria-label="Send email to Sravanthi">
+          SAY HELLO
+        </a>
+
+        <div class="contact-location">
+          Los Angeles, CA • Open to remote and local opportunities<br>
+          Available for freelance projects, research collaborations, and interesting challenges
+        </div>
+        <!-- Mobile Social Links -->
+        <div class="social-links-mobile">
+          <a href="https://github.com/sravanthisinha" target="_blank" rel="noopener noreferrer"
+            class="social-link-mobile" aria-label="Visit Sravanthi's GitHub profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/sravanthisinha" target="_blank" rel="noopener noreferrer"
+            class="social-link-mobile" aria-label="Visit Sravanthi's LinkedIn profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Fixed Social Links (Desktop) -->
+  <div class="social-links-fixed">
+    <a href="https://github.com/sravanthisinha" target="_blank" rel="noopener noreferrer" class="social-link-fixed"
+      aria-label="Visit Sravanthi's GitHub profile">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+      </svg>
+    </a>
+    <a href="https://linkedin.com/in/sravanthisinha" target="_blank" rel="noopener noreferrer" class="social-link-fixed"
+      aria-label="Visit Sravanthi's LinkedIn profile">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+      </svg>
+    </a>
+  </div>
+  <script>
+    // Create twinkling stars
+    function createStars() {
+      const container = document.getElementById('stars-container');
+      const numberOfStars = window.innerWidth > 768 ? 150 : 75;
+
+      for (let i = 0; i < numberOfStars; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+
+        // Random size between 1px and 2px
+        const size = Math.random() * 1.5 + 0.5;
+        star.style.width = size + 'px';
+        star.style.height = size + 'px';
+
+        // Random position
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+
+        // Random animation delay
+        star.style.animationDelay = Math.random() * 3 + 's';
+
+        container.appendChild(star);
+      }
+    }
+
+    // Enhanced scroll elevator positioning
+    function updateScrollRocket() {
+      const scrollElevator = document.getElementById('scroll-rocket');
+      if (!scrollElevator || window.innerWidth <= 768) return;
+
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercentage = Math.min((scrollTop / documentHeight) * 100, 100);
+
+      const windowHeight = window.innerHeight;
+      const elevatorPosition = (scrollPercentage / 100) * (windowHeight - 150);
+      scrollElevator.style.top = Math.max(80, elevatorPosition) + 'px';
+    }
+
+    // Enhanced navigation functionality
+    function setupNavigation() {
+      const desktopNavItems = document.querySelectorAll('.nav-item');
+      const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileNavMenu = document.getElementById('mobile-nav-menu');
+
+      // Desktop navigation
+      desktopNavItems.forEach(item => {
+        item.addEventListener('click', handleNavClick);
+        item.addEventListener('keydown', handleNavKeyDown);
+      });
+
+      // Mobile navigation
+      mobileNavItems.forEach(item => {
+        item.addEventListener('click', handleMobileNavClick);
+      });
+
+      // Mobile menu toggle
+      mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+
+      function handleNavClick(e) {
+        e.preventDefault();
+        navigateToSection(this, desktopNavItems);
+      }
+
+      function handleNavKeyDown(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          navigateToSection(this, desktopNavItems);
+        }
+      }
+
+      function handleMobileNavClick(e) {
+        e.preventDefault();
+        navigateToSection(this, mobileNavItems);
+        closeMobileMenu();
+      }
+
+      function navigateToSection(clickedItem, navItems) {
+        // Remove active class from all nav items
+        navItems.forEach(navItem => navItem.classList.remove('active'));
+
+        // Add active class to clicked nav item
+        clickedItem.classList.add('active');
+
+        // Smooth scroll to section
+        const sectionId = clickedItem.getAttribute('data-section');
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+
+      function toggleMobileMenu() {
+        const isOpen = mobileNavMenu.classList.contains('active');
+        if (isOpen) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      }
+
+      function openMobileMenu() {
+        mobileNavMenu.classList.add('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'true');
+        mobileMenuToggle.innerHTML = `
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        `;
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMobileMenu() {
+        mobileNavMenu.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenuToggle.innerHTML = `
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        `;
+        document.body.style.overflow = '';
+      }
+
+      // Close mobile menu when clicking outside
+      mobileNavMenu.addEventListener('click', (e) => {
+        if (e.target === mobileNavMenu) {
+          closeMobileMenu();
+        }
+      });
+
+      // Handle escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileNavMenu.classList.contains('active')) {
+          closeMobileMenu();
+        }
+      });
+    }
+
+    // Update active nav item based on scroll position
+    function updateActiveNav() {
+      const sections = document.querySelectorAll('.content-section[id]');
+      const desktopNavItems = document.querySelectorAll('.nav-item');
+      const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - 300) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      [desktopNavItems, mobileNavItems].forEach(navItems => {
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('data-section') === current) {
+            item.classList.add('active');
+          }
+        });
+      });
+    }
+
+    // Intersection Observer for smoother section detection
+    function setupIntersectionObserver() {
+      const sections = document.querySelectorAll('.content-section[id]');
+      const observerOptions = {
+        rootMargin: '-20% 0px -20% 0px',
+        threshold: 0.2
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.getAttribute('id');
+            updateActiveNavForSection(sectionId);
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => observer.observe(section));
+    }
+
+    function updateActiveNavForSection(sectionId) {
+      const desktopNavItems = document.querySelectorAll('.nav-item');
+      const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+      [desktopNavItems, mobileNavItems].forEach(navItems => {
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('data-section') === sectionId) {
+            item.classList.add('active');
+          }
+        });
+      });
+    }
+
+    // Combined scroll handler
+    function handleScroll() {
+      updateScrollRocket();
+      updateActiveNav();
+    }
+
+    // Debounced scroll handler for better performance
+    function debounce(func, wait) {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    }
+
+    // Initialize everything
+    function init() {
+      createStars();
+      setupNavigation();
+      setupIntersectionObserver();
+
+      // Use debounced scroll handler
+      window.addEventListener('scroll', debounce(handleScroll, 10));
+
+      // Handle window resize
+      window.addEventListener('resize', debounce(() => {
+        // Recreate stars for new screen size
+        const container = document.getElementById('stars-container');
+        container.innerHTML = '';
+        createStars();
+      }, 250));
+
+      // Initial call to set proper positions
+      handleScroll();
+    }
+
+    // Start when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+
+    // Prefers reduced motion handling
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (prefersReducedMotion.matches) {
+      document.body.classList.add('reduced-motion');
+    }
+
+    prefersReducedMotion.addEventListener('change', (e) => {
+      if (e.matches) {
+        document.body.classList.add('reduced-motion');
+      } else {
+        document.body.classList.remove('reduced-motion');
+      }
+    });
+  </script>
 </body>
 
 </html>
