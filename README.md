@@ -15,7 +15,7 @@ Visit the live portfolio: [sravanthisinha.github.io](https://sravanthisinha.gith
 
 ## 🎨 Design Philosophy
 
-This portfolio embraces a space elevator theme to represent the journey from research to real-world applications—bridging different domains through technology and innovation.
+This portfolio embraces a space elevator theme to represent the journey from research to real-world applications, bridging different domains through technology and innovation.
 
 ## 📞 Contact
 
